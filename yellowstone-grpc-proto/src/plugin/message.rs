@@ -41,6 +41,7 @@ impl From<SlotStatus> for CommitmentLevel {
             SlotStatus::Processed => Self::Processed,
             SlotStatus::Confirmed => Self::Confirmed,
             SlotStatus::Rooted => Self::Finalized,
+            _ => todo!(),
         }
     }
 }
